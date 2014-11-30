@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6F7627F2-52EA-4FA8-ADDA-1F190D7056CC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DaZhe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2A79CA0F810DAE5DD47966B0520821735B1CA264</key>
+		<string>github.com:watermeion/DiscountApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DaZhe.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2A79CA0F810DAE5DD47966B0520821735B1CA264</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:watermeion/DiscountApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2A79CA0F810DAE5DD47966B0520821735B1CA264</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2A79CA0F810DAE5DD47966B0520821735B1CA264</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DaZheV1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="WjP-wt-opp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="POc-wV-Z9o">
+            <objects>
+                <navigationController storyboardIdentifier="firstNavi" definesPresentationContext="YES" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uTX-4r-Pnh" customClass="SRFirstNavi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="home.png" id="jIw-kE-4bq"/>
+                    <navigationItem key="navigationItem" id="7aU-yT-sii"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GSX-10-Ydu">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9KU-bM-huE">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MzL-5C-tc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="589" y="-789"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="A5U-wG-3ku">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="9mN-9l-z3D" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FVA-Sg-hPo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ovv-jx-5jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804" y="292"/>
+        </scene>
+        <!--IntroduceVC-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="introVC" id="vXZ-lx-hvc" customClass="SRIntroduceVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nvS-5o-SpR"/>
+                        <viewControllerLayoutGuide type="bottom" id="MrL-fS-aVh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="100" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFu-Qw-yfp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HF5-0p-idB"/>
+                    <connections>
+                        <outlet property="scrollView" destination="EFu-Qw-yfp" id="vvr-CB-CuC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-347" y="292"/>
+        </scene>
+        <!--RtabbarVC-->
+        <scene sceneID="3n8-r0-Gl0">
+            <objects>
+                <tabBarController storyboardIdentifier="tabbarVC" wantsFullScreenLayout="YES" definesPresentationContext="YES" hidesBottomBarWhenPushed="YES" id="WjP-wt-opp" customClass="SRtabbarVC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nZY-Hr-Vkd"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="aze-AV-OWE">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uTX-4r-Pnh" kind="relationship" relationship="viewControllers" id="RkW-VR-3bh"/>
+                        <segue destination="eAd-Ah-3dD" kind="relationship" relationship="viewControllers" id="oEd-TV-cr0"/>
+                        <segue destination="Seu-6N-L7y" kind="relationship" relationship="viewControllers" id="kq3-4Q-AIL"/>
+                        <segue destination="uQy-2x-gRc" kind="relationship" relationship="viewControllers" id="txq-tB-bU2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hk-mP-bxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="292"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="Yuw-ZK-XZh">
+            <objects>
+                <navigationController storyboardIdentifier="secondNavi" definesPresentationContext="YES" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eAd-Ah-3dD" customClass="SRFirstNavi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" image="find.png" id="hdU-5D-eUR"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Al6-pB-u9u">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71a-XB-kai" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="589" y="-106"/>
+        </scene>
+        <!--悬赏-->
+        <scene sceneID="Mjx-14-15X">
+            <objects>
+                <navigationController storyboardIdentifier="thirdNavi" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Seu-6N-L7y" customClass="SRFirstNavi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="悬赏" image="activity.png" id="z2D-X7-xMQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M9C-6k-8xL">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTo-1Q-IkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="589" y="520"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="ol4-Kz-5SX">
+            <objects>
+                <navigationController storyboardIdentifier="forthNavi" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uQy-2x-gRc" customClass="SRFirstNavi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="mine.png" id="SNm-Qi-a9f"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="olx-Ee-td8">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7w-cJ-Jat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="589" y="1322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="activity.png" width="30" height="30"/>
+        <image name="find.png" width="30" height="30"/>
+        <image name="home.png" width="30" height="30"/>
+        <image name="mine.png" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
